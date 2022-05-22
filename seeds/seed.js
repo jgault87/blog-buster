@@ -20,10 +20,12 @@ const seedDatabase = async () => {
     });
   }
 
-  Comment.bulkCreate(commentData, {
-    individualHooks: true,
-    returning: true,
-  });
+  for (const comment of commentData) {
+    await Comment.create({
+      ...comment,
+      user_id: users[Math.floor(Math.random() * users.length)].id,
+    });
+  }
 
   process.exit(0);
 };

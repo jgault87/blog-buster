@@ -1,31 +1,17 @@
 [{
         "user_id": 1,
-        "blog_id": 5,
-        "comment_text": "This is amazing!"
-    },
-    {
-        "user_id": 2,
-        "blog_id": 3,
-        "comment_text": "This is amazinger!"
-    },
-    {
-        "user_id": 3,
-        "blog_id": 2,
-        "comment_text": "This is amazinger!"
-    },
-    {
-        "user_id": 2,
         "blog_id": 1,
         "comment_text": "This is amazing!"
     },
     {
         "user_id": 2,
-        "blog_id": 3,
-        "comment_text": "I love this!"
+        "blog_id": 2,
+        "comment_text": "This is amazinger!"
     },
     {
-        "user_id": 2,
+        "user_id": 3,
         "blog_id": 3,
-        "comment_text": "This is amazinger!"
+        "comment_text": "This is amazingest!"
     }
+
 ]
