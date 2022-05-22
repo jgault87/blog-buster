@@ -11,20 +11,20 @@ Blog.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    title: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    blog_body: {
-      type: DataTypes.TEXT,
+    description: {
+      type: DataTypes.STRING,
     },
     date_created: {
       type: DataTypes.DATE,
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    comments: {
-      type: DataTypes.STRING,
+    needed_funding: {
+      type: DataTypes.FLOAT,
       allowNull: false,
     },
     user_id: {
