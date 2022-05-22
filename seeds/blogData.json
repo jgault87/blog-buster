@@ -1,0 +1,16 @@
+[{
+    "title": "Music Near Me",
+    "blog_body": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "comments": "I do not agree!"
+  },
+  {
+    "title": "The Ultimate Tech Quiz",
+    "blog_body": "The flushSyncforces React to apply the state updates in the callback function synchronously and therefore forces React to update the DOM immediately. Other pending state updates will be force applied too. After all, flushSync should be used sparingly almost never, except for occassion where it is really needed, because it comes with caveats. In conclusion, batching in React is just an implementation detail to improve the performance of state updates and therefore the re-rendering of each React component.",
+    "comments": "Lets hear it one more time for the people in the back"
+  },
+  {
+    "title": "React is resource he",
+    "blog_body": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
+    "comments": "great work, keep it up"
+  }
+]
