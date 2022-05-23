@@ -15,9 +15,10 @@
           <!-- Conditionally render login or logout links -->
           <a href='/'>Home</a>
           |
+          <a href='/dashboard'>Dashboard</a>
+          |
           {{#if logged_in}}
-            <a href='/dashboard'>Dashboard</a>
-            |
+
             <span class='no-button' id='logout'>logout</span>
           {{else}}
             <a href='/login'>login</a>
