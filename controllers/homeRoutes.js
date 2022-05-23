@@ -4,13 +4,27 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
-    // Get all projects and JOIN with user data
+    // Get all blogs and JOIN with user data sorting by DESC ID which will sort newest toward top
     const blogData = await Blog.findAll({
       order: [['id', 'DESC']],
       include: [
         {
           model: User,
           attributes: ['name'],
+        },
+        {
+          model: Comment,
+          attributes: [
+            'id',
+            'user_id',
+            'blog_id',
+            'comment_text',
+            'date_created',
+          ],
+          include: {
+            model: User,
+            attributes: ['name'],
+          },
         },
       ],
     });
@@ -35,6 +49,20 @@ router.get('/blog/:id', async (req, res) => {
         {
           model: User,
           attributes: ['name'],
+        },
+        {
+          model: Comment,
+          attributes: [
+            'id',
+            'comment_text',
+            'blog_id',
+            'date_created',
+            'user_id',
+          ],
+          include: {
+            model: User,
+            attributes: ['name'],
+          },
         },
       ],
     });
