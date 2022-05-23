@@ -9,14 +9,18 @@ body {
   --secondary: #9caea9;
   --tertiary: #788585;
   --light-dark: #6f6866;
-  --dark: #38302e;
+  --dark: #391752e0;
   --border-radius: 0.3rem;
 }
 
 .blog {
   background-color: silver;
   border-radius: 0.3rem;
+  text-align: wrap;
+  padding: 0.5rem;
 }
+
+/* .blog-content {} */
 
 header,
 .project:not(:last-child) {
