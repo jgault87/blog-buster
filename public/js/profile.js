@@ -37,14 +37,26 @@ const delButtonHandler = async (event) => {
   }
 };
 
+const editButtonHandler = async (event) => {
+  if (event.target.hasAttribute('data-id')) {
+    const id = event.target.getAttribute('data-id');
+
+    const response = await fetch(`/api/blogs/${id}`, {
+      method: 'DELETE',
+    });
+
+    if (response.ok) {
+      document.location.replace('/dashboard');
+    } else {
+      alert('Failed to delete project');
+    }
+  }
+};
+
 document
   .querySelector('.new-project-form')
   .addEventListener('submit', newFormHandler);
 
 document
   .querySelector('.project-list')
-  .addEventListener('click', delButtonHandler);
-
-document
-  .querySelector('.edit-blog')
   .addEventListener('click', delButtonHandler);
