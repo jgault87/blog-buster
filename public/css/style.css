@@ -14,10 +14,13 @@ body {
 }
 
 .blog {
+
   background-color: silver;
   border-radius: 0.3rem;
   text-align: wrap;
   padding: 0.5rem;
+  border-style: solid;
+  border-color: var(--dark);
 }
 
 

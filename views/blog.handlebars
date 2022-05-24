@@ -21,6 +21,18 @@
   </p>
   
 </div>
-{{> comments}}
+
+<h4 class='text-center'>comments:</h4>
+ {{#each comments as |comment|}}
+ <div class='text-center container container-fluid mt-5 blog comments'>
+                   
+                            {{comment.comment_text}}
+                           
+                            
+                            {{>comments}}
+
+                            </div>
+                            {{/each}}
+
 <script src='./js/comment.js'></script>
 

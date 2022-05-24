@@ -42,6 +42,7 @@ router.get('/', async (req, res) => {
   }
 });
 
+//click on individual blog page need to add comment functionality
 router.get('/blog/:id', async (req, res) => {
   try {
     const blogData = await Blog.findByPk(req.params.id, {
@@ -52,17 +53,8 @@ router.get('/blog/:id', async (req, res) => {
         },
         {
           model: Comment,
-          attributes: [
-            'id',
-            'comment_text',
-            'blog_id',
-            'date_created',
-            'user_id',
-          ],
-          include: {
-            model: User,
-            attributes: ['name'],
-          },
+
+          include: [User],
         },
       ],
     });
