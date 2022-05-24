@@ -1,11 +1,5 @@
-<div class='card-body comment-div' id='commentDiv-{{id}}'>
-  <p class='comment-body mt-3' id='commentBody-{{id}}'>{{comment_text}}</p>
-  <p
-    class='signature comment-details mt-3 mb-3'
-    id='commentDetails-{{id}}'
-  >Comment By: {{user.name}}</p>
-  <p class='signature comment-details'><span class='dateTime'>{{format_date
-        date_created
-      }}
-     
-</div>
+<p>{{comment_text}}</p>
+
+<p>Comment By:
+  {{user.name}}
+  {{format_date date_created}}</p>
