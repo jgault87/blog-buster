@@ -7,17 +7,17 @@
 
   </p>
   <p>
-    <form class='form new-comment-form'>
-      
-        <label for='new-comment'>Add a comment:</label>
-        <input
-          class='form-input'
-          type='text'
-          id='new-comment'
-          name='new-comment'
-        />
-    <button type='submit' class='btn btn-primary'>submit</button>
-     </form>
+     {{#if logged_in}}
+     <form class='form formAddComment' id ='new-comment-form' data-id='{{id}}'>
+                        <div class='form-group mb-3 row'>
+                            <label for='comment-content'>leave a comment:</label>
+                            <textarea class='form-input' id='comment-content' name='comment-content'></textarea>
+                        </div>
+                        <div class='form-group text-center'>
+                            <button type='submit' data-id='{{id}}' class='btn submit-button btn-primary'>Comment</button>
+                        </div>
+                    </form>
+       {{/if}}
   </p>
   
 </div>
@@ -32,7 +32,14 @@
                             {{>comments}}
 
                             </div>
-                            {{/each}}
+  {{/each}}
+
+<div>
+
+</div>
 
 <script src='/js/comment.js'></script>
+
+
+
 
