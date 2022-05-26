@@ -13,6 +13,25 @@ body {
   --border-radius: 0.3rem;
 }
 
+ a {
+  text-emphasis: none;
+  text-decoration: none;
+}
+
+main a {
+  color: black;
+}
+
+main a:hover {
+  color: rgb(12, 10, 19);
+  
+}
+
+.blog-title {
+  color: blue;
+  text-decoration: none;
+}
+
 .blog {
 
   background-color: silver;
