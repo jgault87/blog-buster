@@ -111,4 +111,30 @@ router.get('/signup', (req, res) => {
   res.render('signup');
 });
 
+
+router.get('/edit/:id', withAuth, async (req, res) => {
+  try {
+      const blogData = await Blog.findByPk(req.params.id, {
+          include: [
+              {
+                  model: User,
+                  attributes: ['name']
+              },
+              {
+                  model: Comment,
+                  include: [User]
+              }
+          ]
+      });
+
+      const blog = blogData.get({ plain: true });
+      res.render('bloginfo', {
+          ...blog,
+          logged_in: req.session.logged_in
+      });
+  } catch (error) {
+      res.status(500).json(error);
+  }
+});
+
 module.exports = router;

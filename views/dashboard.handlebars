@@ -42,15 +42,23 @@
           <div class='col-md-8'>
             <h4><a href='/blog/{{blog.id}}'>{{blog.title}}</a></h4>
           </div>
+       <div class='container-fluid col-auto'>
+                   <div class='col-2 edit-button'>
+                        <a href='/edit/{{blog.id}}'>
+                            <button class='btn btn-sm btn-danger' >Edit</button>
+                        </a>
+                    </div>
+
           <div class='col-md-4'>
-            <button
+            <button 
               class='btn btn-sm btn-danger'
               data-id='{{blog.id}}'
             >DELETE</button>
           </div>
+          </div>
         </div>
       {{/each}}
-    </div>
+    
   {{/if}}
 </div>
 

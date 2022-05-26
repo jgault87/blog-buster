@@ -10,7 +10,6 @@
       </h5>
       <p class='blog-content'>
 
-        <!-- Pass needed_funding value to the helper function -->
 
         {{blog.content}}
 
@@ -18,7 +17,7 @@
       <u><strong>posted by
         {{blog.user.name}}
         on
-        {{format_date blog.date_created}}</u></strong>
+        {{format_date blog.date_created}} {{blog.updatedAt}}</u></strong>
     </div>
     <div class='col-md-7'>
 
