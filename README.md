@@ -13,10 +13,11 @@
 ![](https://img.shields.io/badge/Bootstrap-brightgreen.svg)
 ![](https://img.shields.io/badge/Express.js-brightgreen.svg)
 ![](https://img.shields.io/badge/Handlebars-brightgreen.svg)
-
+![](https://img.shields.io/badge/Sequelize-brightgreen.svg)
+![](https://img.shields.io/badge/Bcrypt-brightgreen.svg)
 
   ## Description 
-  this is my first endeavor into creating a full stack application that makes use of front end, back end and database techs that culminate in a tech blogger site that verifies user credentials, uses cookies and session data to handle user queriesand UI is affected by user states. 
+  this is my first endeavor into creating a full stack application that makes use of front end, back end and database techs that culminate in a tech blogger site that verifies user credentials, uses cookies and session data to handle user queriesand UI is affected by user states. It also uses bcrypt hooks to hash password data.
   
 
   ## Table of Contents
